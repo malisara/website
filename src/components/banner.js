@@ -7,11 +7,14 @@ export default function Banner() {
         <>
             <div className={banner}>
                 <div className={bannerText}>
-                    <h1>My awesome business</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse consectetur viverra ultrices. Nullam vitae
-                        elit sit amet neque ultrices tempus non id massa.
-                        Donec eget neque at nisl tincidunt bibendum. </p>
+                    <h1>Cakealicious</h1>
+                    <p>Welcome to our cake store, where we make cakes so delicious
+                        they'll make your taste buds dance the Macarena!
+                        Our cakes are baked with the freshest ingredients,
+                        sprinkled with love and topped with a cherry of awesomeness.
+                    </p>
+
+                    <p>Don't settle for mediocre cake, when you can have a slice of pure bliss.</p>
                 </div>
             </div>
         </>

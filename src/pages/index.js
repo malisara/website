@@ -1,14 +1,17 @@
 import * as React from 'react';
-import Navbar from '../components/navbar';
 import Banner from '../components/banner';
+import ContentBlock from '../components/contentBlock';
+import Navbar from '../components/navbar';
+import Products from '../components/products';
 
 export default function IndexPage() {
   return (
     <>
-      <main>
-        <Navbar></Navbar>
-      </main>
+      <Navbar />
       <Banner />
+      <ContentBlock title={'Heavenly Treats'}>
+        <Products />
+      </ContentBlock> ;
     </>
   );
 };

@@ -17,7 +17,9 @@ Othr: 400
 :root {
     --purple: #655DBB;
     --darkpurple: #3E54AC;
+    --deepgray: #333333;
 }
+
 
 body {
     padding: 0%;
@@ -112,7 +114,7 @@ body {
 
 /* Banner */
 .banner {
-    height: 500px;
+    height: 550px;
     color: white;
     background-color: var(--purple);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
@@ -122,7 +124,7 @@ body {
 
 .bannerText p {
     font-size: 25px;
-    text-align: justify;
+    text-align: center;
     width: 500px;
     max-width: 90vW;
 }
@@ -137,20 +139,80 @@ body {
 
 @media screen and (min-width: 577px) {
     h1 {
-        padding-top: 50px;
+        padding-top: 20px;
         font-size: 50px;
+    }
+
+    .bannerText p {
+        font-size: 25px;
     }
 }
 
 @media screen and (max-width: 576px) {
     h1 {
         padding-top: 10px;
-        font-size: 40px;
+        font-size: 35px;
     }
+
+    .bannerText p {
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
     .bannerText p {
         width: 900px;
     }
+}
+
+/* Content block*/
+
+
+h2 {
+    margin-top: 5rem;
+    font-size: 35px;
+    text-align: center;
+    color: var(--purple);
+}
+
+
+/* Product */
+
+.productsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 5rem auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.productDiv .productImage {
+    width: 350px;
+    height: auto;
+}
+
+.productDiv h3 {
+    font-size: 1.5rem;
+    margin-top: auto;
+    color: var(--deepgray);
+}
+
+
+@media screen and (max-width: 1400px) {
+    .productsDiv {
+        display: block;
+    }
+
 }
