@@ -186,6 +186,7 @@ h2 {
     margin: 5rem auto;
     justify-content: space-between;
     align-items: center;
+    align-items: stretch;
 
 }
 
@@ -195,6 +196,7 @@ h2 {
     align-items: center;
     text-align: center;
     margin-bottom: 3rem;
+    flex: 1;
 
 }
 
@@ -215,4 +217,82 @@ h2 {
         display: block;
     }
 
+}
+
+.productDescription {
+    margin: 0 auto 4rem auto;
+    max-width: 70vw;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+/*Reviews*/
+
+.reviewDiv {
+    width: 40%;
+    margin: 0 auto 4rem auto;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem 3rem 0 3rem;
+}
+
+.star {
+    color: var(--deepgray);
+    stroke-width: 1px;
+    padding: 0 0.5rem;
+    fill: yellow;
+}
+
+.starContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.reviewText {
+    color: var(--deepgray);
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.quoteMark {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.reviewer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.hideReview {
+    display: none;
+}
+
+.changeReviewContainer {
+    display: flex;
+    width: 60%;
+    margin: 1.5rem auto 0.5rem auto;
+    justify-content: center;
+}
+
+.changeReviewContainer button {
+    background-color: transparent;
+    margin: 0.5rem;
+    color: var(--deepgray);
+    cursor: pointer;
+    border: none;
+}
+
+.changeReviewContainer button:hover {
+    color: black;
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { productDiv, productsDiv, productImage } from './style.module.css';
+import { productDiv, productDescription, productsDiv, productImage } from './style.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Products() {
@@ -30,6 +30,19 @@ export default function Products() {
                     </div>
                 </div>
             </div>;
+
+            <div className={productDescription}>
+
+                Looking for a reason to indulge in some cake? Look no further!
+                Our cakes are so delicious, they'll make you forget all about your diet.
+                But don't worry, we won't judge. In fact, we encourage it!
+                Our cakes are made with only the finest ingredients,
+                and our bakers put love and care into every single bite. So go ahead,
+                order that cake you've been eyeing. You deserve it! And if anyone asks,
+                just tell them it's for the good of your soul (and your taste buds).
+
+
+            </div>
         </>
     );
 }

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "stars": 5,
+        "text": "I ordered a cake for my son's birthday and it was the most delicious cake I've ever had! The frosting was perfectly sweet and the cake itself was moist and flavorful. Highly recommend!"
+    },
+    {
+        "id": 2,
+        "name": "John Smith",
+        "stars": 4,
+        "text": "I ordered a cake for my wife's birthday and she loved it! The design was beautiful and the taste was great. The only reason I'm giving it 4 stars instead of 5 is because I thought it was a bit pricey."
+    },
+    {
+        "id": 3,
+        "name": "Emily Nguyen",
+        "stars": 5,
+        "text": "I recently ordered a cake for a friend's bridal shower and it was a huge hit! Everyone loved it and kept asking where I got it from. The design was elegant and the taste was amazing. Will definitely order again!"
+    },
+    {
+        "id": 4,
+        "name": "David Lee",
+        "stars": 4,
+        "text": "I ordered a cake for a work event and it was delicious! The design was simple and modern, which is what we were looking for. The only reason I'm not giving it 5 stars is because I thought it was a bit small for the price."
+    },
+    {
+        "id": 5,
+        "name": "Jennifer Chen",
+        "stars": 5,
+        "text": "I ordered a cake for my daughter's graduation party and it was amazing! The design was exactly what we asked for and the taste was perfect. Everyone kept asking for seconds! Will definitely order again for future events."
+    },
+    {
+        "id": 6,
+        "name": "Michael Kim",
+        "stars": 3,
+        "text": "I ordered a cake for a friend's birthday and while the taste was good, I wasn't thrilled with the design. It didn't look quite like what was shown in the picture on the website. It was also a bit on the expensive side."
+    }
+]

@@ -3,6 +3,7 @@ import Banner from '../components/banner';
 import ContentBlock from '../components/contentBlock';
 import Navbar from '../components/navbar';
 import Products from '../components/products';
+import ReviewList from '../components/reviewList';
 
 export default function IndexPage() {
   return (
@@ -12,6 +13,7 @@ export default function IndexPage() {
       <ContentBlock title={'Heavenly Treats'}>
         <Products />
       </ContentBlock> ;
+      <ReviewList />
     </>
   );
 };
