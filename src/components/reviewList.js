@@ -22,13 +22,20 @@ export default function ReviewList() {
     const reviews = data.allReviewsJson.edges;
     const [currentReviewIndex, setCurrentReviewIndex] = React.useState(0);
 
-    const handleNextReviewClick = () => {
+    function handleNextReviewClick() {
         setCurrentReviewIndex((currentReviewIndex + 1) % reviews.length);
     };
 
-    const handlePrevReviewClick = () => {
+    function handlePrevReviewClick() {
         setCurrentReviewIndex((currentReviewIndex - 1 + reviews.length) % reviews.length);
     };
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentReviewIndex((currentReviewIndex + 1) % reviews.length);
+        }, 4000);
+        return () => clearInterval(interval);
+    }, [currentReviewIndex, reviews]);
 
     return (
         <div className="review-list">
