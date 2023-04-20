@@ -8,12 +8,11 @@ export default function Navbar() {
     return (
         <>
             <div className={isOpen ? responsive : navbar}>
-                <a href="/#" className={logoContainer}>LOGO</a>
+                <a href="#home" className={logoContainer}>CK</a>
 
-                {/* todo for loop */}
-                <a href="/#">Products</a>
-                <a href="/#">About us</a>
-                <a href="/#">Reviews</a>
+                <a href="#products">Products</a>
+                <a href="#about">About us</a>
+                <a href="#reviews">Reviews</a>
                 <button className={hamburgerIcon} onClick={() => {
                     setOpen(prevIsOpen => !prevIsOpen);
                 }}>

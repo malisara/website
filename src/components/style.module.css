@@ -218,6 +218,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     align-items: stretch;
+    padding-bottom: 5rem;
 
 }
 
@@ -227,7 +228,6 @@ h2 {
     align-items: center;
     text-align: center;
     flex: 1;
-
 }
 
 .productDiv .productImage {
@@ -251,12 +251,12 @@ h2 {
 
 .productDescription {
     margin: auto;
-    padding-top: 5rem;
     max-width: 70vw;
     font-size: 1.2rem;
     text-align: center;
     color: var(--gray);
     line-height: 1.8;
+    text-align: justify;
 }
 
 /*Reviews*/
@@ -350,4 +350,52 @@ h2 {
 
 .changeReviewContainer button:hover {
     color: white;
+}
+
+/*About us*/
+
+hr {
+    margin: 5rem auto 2rem auto;
+    width: 70%;
+    border: none;
+    border-top: 0.5px solid var(--deepgray);
+}
+
+.contactUs {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--purple);
+    align-self: center;
+}
+
+.contactSection {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+.grayIcons {
+    color: var(--deepgray);
+    margin-right: 1.5rem;
+}
+
+.someSection {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.someSection .grayIcons:hover {
+    color: var(--darkpurple);
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform: translateY(-10px);
 }

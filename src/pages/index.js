@@ -4,23 +4,30 @@ import ContentBlock from '../components/contentBlock';
 import Navbar from '../components/navbar';
 import Products from '../components/products';
 import ReviewList from '../components/reviewList';
+import AboutUs from '../components/about';
 import { skewedSection } from '../components/style.module.css';
 
 export default function IndexPage() {
   return (
     <>
       <Navbar />
-      <Banner />
+      <Banner id={'home'} />
 
-      <ContentBlock title={'Heavenly Treats'}>
+      <ContentBlock id={'products'} title={'Heavenly Treats'}>
         <Products />
       </ContentBlock> ;
 
       <div className={skewedSection}>
-        <ContentBlock skewedSection={true} title={'User Reviews'}>
+        <ContentBlock id={'reviews'} skewedSection={true} title={'User Reviews'}>
           <ReviewList />
         </ContentBlock>
       </div>
+
+      <ContentBlock id={'about'} title={'About us'}>
+        <AboutUs />
+      </ContentBlock>
+
+
     </>
   );
 };

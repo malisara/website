@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { banner, bannerText } from './style.module.css';
 
-export default function Banner() {
+export default function Banner(id) {
 
     return (
         <>
-            <div className={banner}>
+            <div id={id} className={banner}>
                 <div className={bannerText}>
                     <h1>Cakealicious</h1>
                     <p>Welcome to our cake store, where we make cakes so delicious
