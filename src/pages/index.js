@@ -28,6 +28,8 @@ export default function IndexPage() {
       </ContentBlock>
 
 
+
+      <footer>Cakealicious 2023</footer>
     </>
   );
 };

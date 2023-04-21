@@ -10,7 +10,7 @@ export default function Products() {
                     <StaticImage src='../images/one.png' alt='image one' className={productImage} />
                     <h3>ChocoOverload</h3>
                     <div>
-                        <span>$10.00</span>
+                        <span>$98.00</span>
                     </div>
                 </div>
 
@@ -18,7 +18,7 @@ export default function Products() {
                     <StaticImage src='../images/two.png' alt='image two' className={productImage} />
                     <h3>BerryChocoBliss</h3>
                     <div>
-                        <span>$10.00</span>
+                        <span>$105.00</span>
                     </div>
                 </div>
 
@@ -26,7 +26,7 @@ export default function Products() {
                     <StaticImage src='../images/three.png' alt='image three' className={productImage} />
                     <h3>BerryDream</h3>
                     <div>
-                        <span>$10.00</span>
+                        <span>$85.00</span>
                     </div>
                 </div>
             </div>;

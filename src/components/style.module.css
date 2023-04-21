@@ -114,11 +114,12 @@ body {
 
 /* Banner */
 .banner {
-    height: 550px;
     color: white;
     background-color: var(--purple);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
     background: linear-gradient(175deg, var(--purple) 25%, rgb(140, 147, 207) 65%, rgb(154, 153, 204) 70%);
+    height: fit-content;
+    padding-bottom: 5rem;
 }
 
 
@@ -150,7 +151,8 @@ body {
 
 @media screen and (max-width: 576px) {
     h1 {
-        padding-top: 10px;
+        padding: 10px;
+        margin: 0 auto;
         font-size: 35px;
     }
 
@@ -245,8 +247,16 @@ h2 {
 @media screen and (max-width: 1400px) {
     .productsDiv {
         display: block;
+        padding-bottom: 2.5rem;
     }
 
+    .productDiv {
+        margin-bottom: 2rem;
+    }
+
+    .productDiv .productImage {
+        max-width: 75%;
+    }
 }
 
 .productDescription {
@@ -276,6 +286,10 @@ h2 {
 @media screen and (max-width: 992px) {
     .reviewDiv {
         width: 60%;
+    }
+
+    h2 {
+        margin: 2rem auto;
     }
 
 }
@@ -398,4 +412,16 @@ h3 {
     cursor: pointer;
     transition: transform 0.6s;
     transform: translateY(-10px);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
