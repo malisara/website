@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `website`,
+    title: `Cakealicious`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -20,5 +20,18 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Cakealicious`,
+        short_name: `CK`,
+        lang: 'en',
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#655DBB`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`
+      },
+    }
   ],
 };

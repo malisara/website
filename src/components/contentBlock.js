@@ -3,9 +3,9 @@ import { whiteTitle, purpleTitle } from './style.module.css';
 
 export default function ContentBlock({ title, children, skewedSection, id }) {
     return (
-        <>
-            <h2 id={id} className={skewedSection ? whiteTitle : purpleTitle}>{title}</h2>
+        <section id={id}>
+            <h2 className={skewedSection ? whiteTitle : purpleTitle}>{title}</h2>
             {children}
-        </>
+        </section>
     );
 }
