@@ -1,49 +1,47 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import { notFound } from '../components/style.module.css';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
+
 const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+  fontSize: "9rem",
+  margin: '0',
+  paddingTop: '4rem'
+};
+
+const subHeadingStyles = {
+  fontSize: "2rem",
+  marginTop: '0.2rem'
+};
 
 const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
+  fontSize: "1.3rem"
+};
+
+const linkStyles = {
+  fontWeight: '700',
   padding: 4,
-  backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
-  borderRadius: 4,
-}
+  textDecoration: 'none'
+};
+
+
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
+    <main className={notFound}>
+      <h1 style={headingStyles}>404</h1>
+      <h4 style={subHeadingStyles}>Page not found</h4>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+        We couldn’t find what you were looking for.
         <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
+        Visit the
+        <Link style={linkStyles} to="/"> homepage</Link>.
       </p>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;
