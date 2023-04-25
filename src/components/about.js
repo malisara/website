@@ -57,8 +57,8 @@ export default function AboutUs() {
                 </div>
 
                 <div className={someSection}>
-                    <a href='/#' aria-label="link to Instagram"><Instagram className={grayIcons} /></a>
-                    <a href='/#' aria-label="link to Facebook"><Facebook className={grayIcons} /></a>
+                    <a href='/#' aria-label="link to Instagram" target="_blank"><Instagram className={grayIcons} /></a>
+                    <a href='/#' aria-label="link to Facebook" target="_blank"><Facebook className={grayIcons} /></a>
                 </div>
 
             </div >

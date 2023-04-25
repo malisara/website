@@ -6,12 +6,13 @@ import Products from '../components/products';
 import ReviewList from '../components/reviewList';
 import AboutUs from '../components/about';
 import { skewedSection } from '../components/style.module.css';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export default function IndexPage() {
   return (
     <>
       <Navbar />
-      <Banner id={'home'} />
+      <Banner />
 
       <ContentBlock id={'products'} title={'Heavenly Treats'}>
         <Products />
@@ -27,10 +28,21 @@ export default function IndexPage() {
         <AboutUs />
       </ContentBlock>
 
-
-
       <footer>Cakealicious 2023</footer>
     </>
   );
 };
 
+
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+  `);
+  return <title>{data.site.siteMetadata.title}</title>;
+};
